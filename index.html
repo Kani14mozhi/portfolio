@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+
+ 
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Kanimozhi.J</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="resume.pdf" class="btn btn-primary btn-small" download>Resume</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <div class="hero-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal">👋 Welcome to my little corner of the internet</p>
+      <h1 class="reveal">Hi, I'm <span class="highlight">Kanimozhi.J</span></h1>
+      <h2 class="typed-line reveal">
+        I'm a <span class="typed-text" id="typedText"></span><span class="type-cursor">|</span>
+      </h2>
+      <p class="hero-text reveal">
+        Final-year B.Tech (IT) student who loves turning ideas into clean,
+        usable interfaces — then bringing them to life with code. Currently
+        looking for an internship where I can learn fast and build things
+        people enjoy using.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-outline">Let's connect</a>
+      </div>
+    </div>
+
+    <div class="hero-mascot" aria-hidden="true">
+      <div class="mascot" id="mascot">
+        <div class="mascot-antenna"><span class="antenna-ball"></span></div>
+        <div class="mascot-head">
+          <div class="mascot-eye left"><div class="pupil"></div></div>
+          <div class="mascot-eye right"><div class="pupil"></div></div>
+          <div class="mascot-smile"></div>
+        </div>
+        <div class="mascot-body">
+          <div class="mascot-screen">&lt;/&gt;</div>
+        </div>
+        <div class="mascot-arm left"></div>
+        <div class="mascot-arm right"></div>
+        <div class="mascot-legs">
+          <span></span><span></span>
+        </div>
+      </div>
+      <div class="mascot-shadow"></div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="tag">About Me</span>
+      <h2>A little about who I am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Hey there! I'm a final-year B.Tech (Information Technology) student
+          with a soft spot for clean code and even cleaner interfaces. I love
+          the full journey of building something — sketching the user flow,
+          designing it in Figma, and then bringing it to life with HTML, CSS
+          and JavaScript, often backed by a bit of Python on the inside.
+        </p>
+        <p>
+          Outside of coursework, I spend my time experimenting with small
+          side projects, polishing UI details that most people won't notice
+          (but I will), and looking for my next internship — somewhere I can
+          learn from people smarter than me and ship things that actually help.
+        </p>
+      </div>
+
+      <div class="about-cards reveal">
+        <div class="info-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h4>Education</h4>
+            <p>B.Tech in Information Technology — Final Year</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Based in</h4>
+            <p>Kancheepuram, India</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-briefcase"></i>
+          <div>
+            <h4>Looking for</h4>
+            <p>Internships in Python Web Development &amp; UI/UX Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="tag">Skills</span>
+      <h2>What I bring to the table</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3><i class="fa-solid fa-code"></i> Languages</h3>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">UI&UX</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3><i class="fa-solid fa-laptop-code"></i> Frontend Development</h3>
+        <div class="pill-row">
+          <span class="pill">Responsive Design</span>
+          <span class="pill">Flexbox &amp; Grid</span>
+          <span class="pill">DOM &amp; ES6+</span>
+          <span class="pill">Git &amp; GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3><i class="fa-solid fa-pen-ruler"></i> UI/UX Design</h3>
+        <div class="pill-row">
+          <span class="pill">Figma</span>
+          <span class="pill">Wireframing</span>
+          <span class="pill">Prototyping</span>
+          <span class="pill">User Research</span>
+          <span class="pill">Design Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="section-head reveal">
+      <span class="tag">Projects</span>
+      <h2>Things I've built</h2>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card reveal">
+        <div class="project-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="project-thumb thumb-1">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Food Reduction Management Platform</h3>
+          <p>
+           Developed a Food Waste Reduction Platform using Python Flask and
+SQLite to connect food donors with NGOs.
+Achieved improved fraud detection accuracy, helping reduce financial
+losses and enabling faster identification of suspicious transactions.
+          </p>
+          <div class="pill-row">
+            <span class="pill small">Python</span>
+            <span class="pill small">Flask</span>
+            <span class="pill small">SQLite</span>
+            <span class="pill small">HTML</span>
+            <span class="pill small">Git/Github</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Kani14mozhi/food-waste-reduction-platform" class="btn btn-small btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+            <a href="https://github.com/Kani14mozhi/food-waste-reduction-platform" class="btn btn-small btn-outline">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal">
+        <div class="project-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="project-thumb thumb-2">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Fraud Credit Card Detection</h3>
+          <p>
+           Developed a Credit Card Fraud Detection System using Python and Scikitlearn
+to identify fraudulent transactions.
+Achieved Improved efficiency in food utilization by reducing wastage and
+enabling better inventory control and resource optimization..
+          </p>
+          <div class="pill-row">
+            <span class="pill small">Python</span>
+            <span class="pill small">Machine Learning</span>
+            <span class="pill small">Pandas</span>
+            <span class="pill small">Numpy</span>
+            <span class="pill small">Scikit-Learn</span>
+            <span class="pill small">Data analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Kani14mozhi/Credit-card-fraud-detection" class="btn btn-small btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+            <a href="https://github.com/Kani14mozhi/Credit-card-fraud-detection" class="btn btn-small btn-outline">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="contact-card reveal">
+      <span class="tag">Contact</span>
+      <h2>Let's build something together</h2>
+      <p>
+        I'm actively looking for internship opportunities — feel free to
+        reach out, I'd love to chat about how I can help your team.
+      </p>
+
+      <div class="contact-actions">
+        <button class="btn btn-primary" id="copyEmail">
+          <i class="fa-solid fa-envelope"></i> kanikanii140106@gmail.com
+        </button>
+        <a href="https://www.linkedin.com/in/kani-mozhi14/" class="icon-btn-lg" aria-label="LinkedIn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Kani14mozhi" class="icon-btn-lg" aria-label="GitHub" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="copy-hint" id="copyHint">Click the email to copy it ✨</p>
+
+      <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Kanimozhi.J · © 2026</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
